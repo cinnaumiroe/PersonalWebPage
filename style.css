@@ -1,0 +1,84 @@
+body {
+    background-image: url("WebsiteBg5.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#PictureOfMe {
+    width: 25%;
+    height: 50%;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    object-fit: cover;
+    position: absolute;
+    top: 225px;
+    left: 300px;
+    
+}
+
+#About-text {
+    font-size: 135px;
+    color:rgb(134, 100, 77);
+    font-family: sans-serif;
+    font-weight: bold;
+    position:absolute;
+    top: 145px;
+    left: 875px;
+
+}
+
+#About-text1 {
+    font-size: 15px;
+    color:rgb(126, 91, 78);
+    font-family: sans-serif;
+    position:absolute;
+    top: 385px;
+    left: 875px;
+    width: 635px;
+
+
+}
+
+.About-text-bg {
+    background-color: #f4f3f0; 
+    opacity: 100%;
+    padding: 135px; 
+    border-radius: 12px; 
+    max-width:380px; 
+    margin: 20px; 
+    position:absolute;
+    top: 370px;
+    left: 840px;
+    width: 635px;
+
+
+}
+
+body, header, nav {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.header {
+  background-color:rgb(221, 213, 205); 
+  height: 60px; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  color: rgb(128, 106, 86); 
+}
+
+.nav {
+    font-family: sans-serif;
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    color: inherit;
+    padding: 10px 15px;
+}
