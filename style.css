@@ -1,9 +1,30 @@
-body {
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+main {
+    width: 100%;
+    max-width: 1024px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    box-sizing: border-box;
+}
+
+#homepage {
     background-image: url("WebsiteBg5.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 #PictureOfMe {
@@ -16,15 +37,15 @@ body {
     position: absolute;
     top: 225px;
     left: 300px;
-    
+
 }
 
 #About-text {
     font-size: 135px;
-    color:rgb(134, 100, 77);
+    color: rgb(134, 100, 77);
     font-family: sans-serif;
     font-weight: bold;
-    position:absolute;
+    position: absolute;
     top: 145px;
     left: 875px;
 
@@ -32,9 +53,9 @@ body {
 
 #About-text1 {
     font-size: 15px;
-    color:rgb(126, 91, 78);
+    color: rgb(126, 91, 78);
     font-family: sans-serif;
-    position:absolute;
+    position: absolute;
     top: 385px;
     left: 875px;
     width: 635px;
@@ -43,42 +64,122 @@ body {
 }
 
 .About-text-bg {
-    background-color: #f4f3f0; 
+    background-color: #f4f3f0;
     opacity: 100%;
-    padding: 135px; 
-    border-radius: 12px; 
-    max-width:380px; 
-    margin: 20px; 
-    position:absolute;
+    padding: 135px;
+    border-radius: 12px;
+    max-width: 380px;
+    margin: 20px;
+    position: absolute;
     top: 370px;
     left: 840px;
     width: 635px;
-
-
 }
 
-body, header, nav {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body,
+header,
+nav {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
 
 .header {
-  background-color:rgb(221, 213, 205); 
-  height: 60px; 
-  display: flex;
-  align-items: center; 
-  justify-content: center; 
-  color: rgb(128, 106, 86); 
+    background-color: #2E6171;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.nav {
+.nav a,
+.nav a:visited
+ {
     font-family: sans-serif;
-    color:white;
+    color: #f5f9e9;
     font-weight: bold;
     text-decoration: none;
-    display: block;
-    color: inherit;
-    padding: 10px 15px;
+    padding: 12px 18px;
+    transition: all 0.5s ease-in-out;
 }
+
+.nav a:hover {
+    color: #e0acb8;
+}
+
+/* HOBBIES PAGE - START */
+
+#hobbies-body {
+    background-image: url("WebsiteBg6.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.avatar-container {
+    width: 100%;
+    padding: 18px;
+}
+
+.avatar-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
+
+#hobbies-main-container {
+    width: 100%;
+    max-width: 1024px;
+    box-sizing: border-box;
+}
+
+.hobbies-interests-container {
+    display: flex;
+    width: 100%;
+    padding: 12px 18px;
+    gap: 68px
+}
+
+.hobbies-interests-container .card {
+    flex: 1;
+}
+
+.card .card-title {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #2E6171;
+    stroke-width: 1px;
+    font-size: 60px;
+}
+
+.progress-bar-card {
+    margin: 20px 0
+}
+
+.progress-bar-title {
+    font-family: sans-serif;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(134, 100, 77);
+}
+
+.progress-bar-container {
+    width: 100%;
+    background-color: rgb(221, 213, 205);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.progress-bar-container .progress-bar {
+    font-family: sans-serif;
+    background-color: rgb(224, 172, 184);
+    color: white;
+    text-align: right;
+    padding: 6px 12px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* HOBBIES PAGE - END */
