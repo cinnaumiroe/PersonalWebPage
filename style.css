@@ -28,59 +28,72 @@ section {
 }
 
 #PictureOfMe {
-    width: 44%;
+    width: 100%;
     height: auto;
     border-radius: 50%;
     border-style: solid;
     border-color: white;
     object-fit: cover;
-    display: flex;
     aspect-ratio: 1;
 
 }
 
-.About-main-container .About {
-    flex: 1;
+
+.about-picture {
+    width:25%;
+    height:auto;
+    object-fit: contain;
+    display: block;
+    margin-right: 500px;
+    flex-shrink: 0;
+    position:absolute;
+    margin-left:-4px;
+    padding-top:200px;
 }
 
-#About-text-container  .About-picture {
-    display: flex;
-    width: 100%;
-    text-align: right;
-    flex-direction: row ;
-
-
+.about-title-text {
+    
+    display: block;
+    position:absolute ;
+    margin-left: 500px;
+   
 
 }
+    
 
-#About-title {
-    font-size: 128px;
+.about-title {
+    font-size: 118px;
     color: rgb(134, 100, 77);
     font-family: sans-serif;
     font-weight: bold;
-    
-   
+    padding-bottom: 3px;
+    padding-top: 100px;
+    margin-bottom: 5px;
+
+
 
 }
 
-#About-text {
-    width: 62%;
-    font-size: 14px;
+.about-text {
+    width: 64%;
+    font-size: 17px;
     color: rgb(126, 91, 78);
     font-family: sans-serif;
-   
+    margin-top: 5px;
+    
+
 
 
 }
 
-.About-text-bg {
+.about-text-bg {
     background-color: #f4f3f0;
     opacity: 100%;
     padding: 135px;
     border-radius: 12px;
     max-width: 380px;
     margin: 20px;
-    
+
 }
 
 body,
@@ -100,8 +113,7 @@ nav {
 }
 
 .nav a,
-.nav a:visited
- {
+.nav a:visited {
     font-family: sans-serif;
     color: #f5f9e9;
     font-weight: bold;
@@ -115,13 +127,57 @@ nav {
 }
 
 .icons-container {
-    display:block;
+    display: block;
     width: 100%;
     max-width: 10px;
     flex: 1;
-    
+    position: absolute;
+    left: 948px;
+    bottom: 241px;
+
 
 }
+
+.about-icons-container {
+    width: 100%;
+
+}
+
+.icon {
+    width: 38px;
+}
+
+.icons-name {
+    display: block;
+    
+    flex: 1;
+    position: absolute;
+    left: 998px;
+    bottom: 248px;
+    line-height: 2.5;
+    font-family: sans-serif;
+
+    
+}
+
+.icons-name a,
+.icons-name:visited {
+    display: block;
+    line-height: 1.0;
+    font-family: sans-serif;
+    color: #2E6171;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 18px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.icons-name a:hover {
+    color: #e0acb8;
+}
+
+
 
 /* HOBBIES PAGE - START */
 
@@ -134,23 +190,30 @@ nav {
 
 .avatar-container {
     width: 100%;
-    padding: 18px;
+    padding: 60px;
 }
 
 .hobby-card {
-    background-color:  rgb(221, 213, 205) ;
+    background-color: rgb(221, 213, 205);
     padding: 5%;
     font-family: sans-serif;
     font-weight: bold;
     border-radius: 28px;
-    margin-top: 30px;
+    margin-top: 20px;
+    text-align: center;
+    color: #7a6853;
+    transition: transform 0.2s;
+}
+
+.hobby-card:hover {
+    transform: scale(1.05, 1.05);
 }
 
 .avatar-container img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 150px;
+    width: 178px;
 }
 
 #hobbies-main-container {
@@ -163,7 +226,7 @@ nav {
     display: flex;
     width: 100%;
     padding: 12px 18px;
-    gap: 88px
+    gap: 94px
 }
 
 .hobbies-interests-container .card {
@@ -176,6 +239,7 @@ nav {
     color: #2E6171;
     stroke-width: 1px;
     font-size: 60px;
+    text-align: center;
 }
 
 .progress-bar-card {
@@ -208,3 +272,84 @@ nav {
 }
 
 /* HOBBIES PAGE - END */
+
+/* GALLERY PAGE */
+
+#gallery {
+    background-image: url("./assets/WebsiteBg7.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#gallery-title {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    color:  #2E6171;
+    background-color: #f4f3f0;
+    border-radius: 10px;
+    transition: transform 0.2s;
+
+}
+
+#gallery-title:hover {
+    transform: scale(1.00, 1.00);
+}
+
+.image-view-container {
+    position: relative;
+}
+
+#preview-image-container {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-buttons {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: fit-content;
+
+    padding: 0px 16px;
+    background-color: #2E6171;
+    color:#f4f3f0;
+    border: 0;
+    border-radius: 100%;
+    font-size: 24pt;
+    aspect-ratio: 1;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.image-buttons:hover {
+    box-shadow: 5px 5px 10px #e0acb8 ;
+}
+
+#prev {
+    left: -24px;
+}
+
+#next {
+    right: -24px;
+}
+
+#preview-image {
+    width: 100%;
+}
+
+#image-thumbnails-container {
+    display: flex;
+    width: 100%;
+    overflow: auto;
+}
+
+.image-thumbnail {
+    width: 100%;
+    max-width: 300px;
+}
