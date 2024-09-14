@@ -28,37 +28,47 @@ section {
 }
 
 #PictureOfMe {
-    width: 25%;
-    height: 50%;
+    width: 44%;
+    height: auto;
     border-radius: 50%;
     border-style: solid;
     border-color: white;
     object-fit: cover;
-    position: absolute;
-    top: 225px;
-    left: 300px;
+    display: flex;
+    aspect-ratio: 1;
+
+}
+
+.About-main-container .About {
+    flex: 1;
+}
+
+#About-text-container  .About-picture {
+    display: flex;
+    width: 100%;
+    text-align: right;
+    flex-direction: row ;
+
+
+
+}
+
+#About-title {
+    font-size: 128px;
+    color: rgb(134, 100, 77);
+    font-family: sans-serif;
+    font-weight: bold;
+    
+   
 
 }
 
 #About-text {
-    font-size: 135px;
-    color: rgb(134, 100, 77);
-    font-family: sans-serif;
-    font-weight: bold;
-    position: absolute;
-    top: 145px;
-    left: 875px;
-
-}
-
-#About-text1 {
-    font-size: 15px;
+    width: 62%;
+    font-size: 14px;
     color: rgb(126, 91, 78);
     font-family: sans-serif;
-    position: absolute;
-    top: 385px;
-    left: 875px;
-    width: 635px;
+   
 
 
 }
@@ -70,10 +80,7 @@ section {
     border-radius: 12px;
     max-width: 380px;
     margin: 20px;
-    position: absolute;
-    top: 370px;
-    left: 840px;
-    width: 635px;
+    
 }
 
 body,
@@ -107,6 +114,15 @@ nav {
     color: #e0acb8;
 }
 
+.icons-container {
+    display:block;
+    width: 100%;
+    max-width: 10px;
+    flex: 1;
+    
+
+}
+
 /* HOBBIES PAGE - START */
 
 #hobbies-body {
@@ -119,6 +135,15 @@ nav {
 .avatar-container {
     width: 100%;
     padding: 18px;
+}
+
+.hobby-card {
+    background-color:  rgb(221, 213, 205) ;
+    padding: 5%;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 28px;
+    margin-top: 30px;
 }
 
 .avatar-container img {
@@ -138,7 +163,7 @@ nav {
     display: flex;
     width: 100%;
     padding: 12px 18px;
-    gap: 68px
+    gap: 88px
 }
 
 .hobbies-interests-container .card {
