@@ -21,7 +21,7 @@ section {
 }
 
 #homepage {
-    background-image: url("WebsiteBg5.png");
+    background-image: url("./assets/WebsiteBg5.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -110,7 +110,7 @@ nav {
 /* HOBBIES PAGE - START */
 
 #hobbies-body {
-    background-image: url("WebsiteBg6.png");
+    background-image: url("./assets/WebsiteBg6.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
