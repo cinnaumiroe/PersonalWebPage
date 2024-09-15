@@ -80,6 +80,8 @@ section {
     color: rgb(126, 91, 78);
     font-family: sans-serif;
     margin-top: 5px;
+   
+    
     
 
 
@@ -91,8 +93,11 @@ section {
     opacity: 100%;
     padding: 135px;
     border-radius: 12px;
-    max-width: 380px;
-    margin: 20px;
+    width: 32%;
+    position:absolute ;
+    margin-left: 500px;
+    margin-top: 348px;
+   
 
 }
 
