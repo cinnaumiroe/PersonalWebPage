@@ -14,6 +14,8 @@ main {
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
+    height: 100%;
+    position: relative;
 }
 
 section {
@@ -25,6 +27,13 @@ section {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#homepage-main-container {
+    position: relative;
 }
 
 #PictureOfMe {
@@ -35,69 +44,81 @@ section {
     border-color: white;
     object-fit: cover;
     aspect-ratio: 1;
-
 }
-
-
-.about-picture {
-    width:25%;
-    height:auto;
-    object-fit: contain;
-    display: block;
-    margin-right: 500px;
-    flex-shrink: 0;
-    position:absolute;
-    margin-left:-4px;
-    padding-top:200px;
-}
-
-.about-title-text {
-    
-    display: block;
-    position:absolute ;
-    margin-left: 500px;
-   
-
-}
-    
 
 .about-title {
-    font-size: 118px;
-    color: #2E6171;
+    font-size: 90px;
     font-family: sans-serif;
     font-weight: bold;
-    padding-bottom: 3px;
-    padding-top: 100px;
-    margin-bottom: 5px;
-
-
-
+    color: #2E6171;
+    margin: 0;
 }
 
 .about-text {
-    width: 64%;
-    font-size: 17px;
-    color: rgb(126, 91, 78);
+    font-size: 18px;
     font-family: sans-serif;
-    margin-top: 5px;
-   
-    
-    
-
-
 
 }
 
-.about-text-bg {
-    background-color: #f4f3f0;
-    opacity: 100%;
-    padding: 135px;
-    border-radius: 12px;
-    width: 32%;
-    position:absolute ;
-    margin-left: 500px;
-    margin-top: 348px;
-   
+.about-picture {
+    width: 468px;
+    text-align: center;
+
+}
+
+.about-text-container {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: fit-content;
+}
+
+.about-picture {
+    flex: 1;
+    padding: 20px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+.about-title-text {
+    flex: 1;
+    padding: 20px;
+    align-self: flex-start;
+    box-sizing: border-box;
+}
+
+.icons-container {
+    width:25%;
+    padding: 20px;
+    margin-left: auto;
+    margin-top: -40px;
+    position: relative;
+    top: -50;
+    box-sizing: border-box;
+}
+
+.icons-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.icons-group-container {
+    display: flex;
+    gap: 10px ;
+    align-items: center;
 
 }
 
@@ -131,57 +152,33 @@ nav {
     color: #e0acb8;
 }
 
-.icons-container {
-    display: block;
-    width: 100%;
-    max-width: 10px;
-    flex: 1;
-    position: absolute;
-    left: 948px;
-    bottom: 241px;
-
-
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.about-icons-container {
-    width: 100%;
-
+.social-links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
-.icon {
+.social-links-container .social-link .icon {
     width: 38px;
 }
 
-.icons-name {
-    display: block;
-    
-    flex: 1;
-    position: absolute;
-    left: 998px;
-    bottom: 248px;
-    line-height: 2.5;
-    font-family: sans-serif;
-
-    
-}
-
-.icons-name a,
-.icons-name:visited {
-    display: block;
-    line-height: 1.0;
-    font-family: sans-serif;
+.social-links-container .social-link .link,
+.social-links-container .social-link .link:visited {
     color: #2E6171;
     font-weight: bold;
     text-decoration: none;
-    padding: 12px 18px;
     transition: all 0.5s ease-in-out;
-
 }
 
-.icons-name a:hover {
+.social-links-container .social-link .link:hover {
     color: #e0acb8;
 }
-
 
 
 /* HOBBIES PAGE - START */
@@ -292,7 +289,7 @@ nav {
     font-weight: bold;
     text-align: center;
     font-size: 50px;
-    color:  #2E6171;
+    color: #2E6171;
     background-color: #f4f3f0;
     border-radius: 10px;
     transition: transform 0.2s;
@@ -323,7 +320,7 @@ nav {
 
     padding: 0px 16px;
     background-color: #2E6171;
-    color:#f4f3f0;
+    color: #f4f3f0;
     border: 0;
     border-radius: 100%;
     font-size: 24pt;
@@ -333,7 +330,7 @@ nav {
 }
 
 .image-buttons:hover {
-    box-shadow: 5px 5px 10px #e0acb8 ;
+    box-shadow: 5px 5px 10px #e0acb8;
 }
 
 #prev {
